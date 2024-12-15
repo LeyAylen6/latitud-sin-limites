@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Latitud sin Límites</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="fs-5">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse fs-3 ms-4" id="navbar">
+               
+                <a class="navbar-brand" href="#">
+                    <img src="/img/common/logo-agencia.png" alt="Latitud Sin Límites Logo" class="col-4">
+                    <h1 class="text-light d-none">Latitud Sin Límites</h1>
+                </a>
+        
+                <ul class="navbar-nav d-flex justify-content-evenly col-8">
+                    <li class="nav-item active">
+                        <a class="nav-link text-light" href="#flights">Vuelos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#all-inclusive">All Inclusive</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#hotels">Hoteles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#excursions">Excursiones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#about-us">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="faqs.html">FAQs</a>
+                    </li>
+                 </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="background-image w-100 d-flex flex-column justify-content-end height-700">
+            <div class="overlay w-100 height-700 z-0"></div>
+            
+            <div class="d-flex flex-column text-light text-end align-items-end p-5 z-1">
+                <h2 class="fs-1 fs-sm-4 fs-md-3 fs-lg-1">Tu viaje, tus reglas!</h2>
+                <p class="fs-2">Personaliza tu itinerario con nuestras opciones de vuelos, hoteles y actividades.</p>
+        
+                <button type="submit" action="" class="btn btn-primary col-md-4 col-sm-3 col-2 fs-5">Arma tu viaje con nosotros</button>
+            </div>  
+        
+            <div class="col-12 d-flex justify-content-center z-1 position-relative text-light fs-5 top-50">
+                <form action="" method="post" class="w-75 w-sm-80 w-md-75 w-lg-75 w-xl-90 bg-primary d-flex justify-content-evenly align-items-center p-4 rounded-4">
+                    <div class="col-10 py-4">
+                        <div class="d-flex flex-wrap justify-content-evenly">
+                            <div class="form-check form-check-inline">
+                                <input id="flights" type="radio" name="serviceType" value="flights" class="form-check-input">
+                                <label for="flights">Vuelos</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input id="allInclusive" type="radio" name="serviceType" value="allInclusive" class="form-check-input">
+                                <label for="allInclusive">Paquetes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input id="excursion" type="radio" name="serviceType" value="excursion" class="form-check-input">
+                                <label for="excursion">Excursiones</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input id="hotel" type="radio" name="serviceType" value="hotel" class="form-check-input">
+                                <label for="hotel">Hotel</label>
+                            </div>
+                        </div>
+        
+                        <div class="d-flex flex-column flex-wrap flex-md-row justify-content-evenly mt-4">
+                            <div class="form-group col-12 col-sm-4 col-md-5 col-lg-2">
+                                <label for="name">Origen</label>
+                                <input id="name" type="text" name="name" placeholder="Ingresa desde dónde via.." class="form-control">
+                            </div>
+                            <div class="form-group col-12 col-sm-5 col-md-5 col-lg-2">
+                                <label for="lastname">Destino</label>
+                                <input id="lastname" type="text" name="lastname" placeholder="Ingresa hacia dónde via.." class="form-control">
+                            </div>
+                            <div class="form-group col-12 col-sm-5 col-md-3 col-lg-2">
+                                <label for="departure-date">Fecha ida</label>
+                                <input id="departure-date" type="date" name="departure-date" class="form-control">
+                            </div>
+                            <div class="form-group col-12 col-sm-5 col-md-3 col-lg-2">
+                                <label for="return-date">Fecha vuelta</label>
+                                <input id="return-date" type="date" name="return-date" class="form-control">
+                            </div>
+                            <div class="form-group col-12 col-sm-5 col-md-3 col-lg-1">
+                                <label for="passengers">Pasajeros</label>
+                                <select class="form-select">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <button type="submit" class="btn btn-action text-center py-2 rounded-4 text-light fs-5 col-2">
+                        Buscar
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section id="promotion" class="d-flex text-light bg-secondary my-5 shadow mt-100">
+            <figure class="d-flex col-7 mt-2"> 
+                <img src="/img/home/promotion/valija.png" class="col-5"/>
+                <figcaption class="col-8 text-black ms-5 my-auto">
+                    <h2 class="fs-4 col-7"><strong>Paga menos comprando tu vuelo junto con un hotel</strong></h2>
+                    <p class="col-6">Aprovecha la promoción y ahorrá hasta un 20% en tu viaje</p>
+                </figcaption>
+            </figure>
+            <aside class="col-5 triangle bg-promotion d-flex justify-content-end align-items-center">
+                <p class="fs-5 text-center col-4 me-5">
+                    <strong class="fs-2 rounded-4 bg-opacity max-content px-2 my-5">10% OFF</strong> 
+                    <strong class="fs-5 d-block">EXTRA</strong> 
+                    pagando con debito, dinero en cuenta o en 1 cuota.
+                </p>
+            </aside>
+        </section>
+
+        <section id="promotion-flights" class="d-flex flex-column align-items-center">
+            <h2 class="bg-primary">Vuelos en Promoción</h2>
+
+            <div id="flights" class="carousel carousel-dark slide w-75 mt-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                        <div class="d-flex justify-content-center">
+                            <article class="card w-25 mx-3 mb-3">
+                                <figure>
+                                    <img src="/img/home/flights/italia.jpg" class="d-block w-100 card-img-top" alt="Italia">
+                                </figure>
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">Italia</h3>
+                                    <p class="card-text w-75">
+                                        Precio por persona desde <s class="text-success">USD$ 2.850</s> 
+                                    </p>
+                                    <p>
+                                        <strong class="text-success">USD$ 2.599</strong>
+                                    </p>
+                                    <a href="#" class="btn btn-primary w-75 mx-auto">Quiero saber más!</a>
+                                </div>
+                            </article>
+
+                            <article class="card w-25 mx-3 mb-3" >
+                                <figure>
+                                    <img src="./img/home/flights/francia.jpg" class="d-block w-100 card-img-top" alt="...">
+                                </figure>
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">París</h3>
+                                    <p class="card-text w-75">
+                                        Precio por persona desde <s class="text-success">USD$ 1.550</s>
+                                    </p>
+                                    <p>
+                                        <strong class="text-success">USD$ 1.200</strong>
+                                    </p>
+                                    <a href="#" class="btn btn-primary w-75 mx-auto mt-2">Quiero saber más!</a>
+                                </div>
+                            </article>
+
+                            <article class="card w-25 mx-3 mb-3">
+                                <figure>
+                                    <img src="./img/home/flights/islandia.jpg" class="d-block w-100 card-img-top" alt="Islandia">
+                                </figure>
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">Islandia</h3>
+                                    <p class="card-text w-75">
+                                        Precio por persona desde <s class="text-success">USD$ 1.300</s>
+                                    </p>
+                                    <p>
+                                        <strong class="text-success">USD$ 1.200</strong>
+                                    </p>
+                                    <a href="#" class="btn btn-primary w-75 mx-auto mt-4">Quiero saber más!</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <article class="card w-25 mx-3 mb-3">
+                                <figure>
+                                    <img src="./img/home/flights/italia.jpg" class="d-block w-100 card-img-top" alt="Italia">
+                                </figure>
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">Italia</h3>
+                                    <p class="card-text w-75">
+                                        Precio por persona desde <s class="text-success">USD$ 2.850</s> 
+                                    </p>
+                                    <p>
+                                        <strong class="text-success">USD$ 2.599</strong>
+                                    </p>
+                                    <a href="#" class="btn btn-primary w-75 mx-auto">Quiero saber más!</a>
+                                </div>
+                            </article>
+
+                            <article class="card w-25 mx-3 mb-3" >
+                                <figure>
+                                    <img src="./img/home/flights/francia.jpg" class="d-block w-100 card-img-top" alt="París">
+                                </figure>
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">París</h3>
+                                    <p class="card-text w-75">
+                                        Precio por persona desde <s class="text-success">USD$ 1.550</s>
+                                    </p>
+                                    <p>
+                                        <strong class="text-success">USD$ 1.200</strong>
+                                    </p>
+                                    <a href="#" class="btn btn-primary w-75 mx-auto mt-2">Quiero saber más!</a>
+                                </div>
+                            </article>
+
+                            <article class="card w-25 mx-3 mb-3">
+                                <figure>
+                                    <img src="./img/home/flights/islandia.jpg" class="d-block w-100 card-img-top" alt="Islandia">
+                                </figure>
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">Islandia</h3>
+                                    <p class="card-text w-75">
+                                        Precio por persona desde <s class="text-success">USD$ 1.300</s>
+                                    </p>
+                                    <p>
+                                        <strong class="text-success">USD$ 1.200</strong>
+                                    </p>
+                                    <a href="#" class="btn btn-primary w-75 mx-auto mt-4">Quiero saber más!</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+              
+                <button class="carousel-control-prev" type="button" data-bs-target="#flights" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#flights" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="promotion-all-inclusive" class="d-flex flex-column align-items-center mt-5">
+            <h2 class="bg-primary">All Inclusive en Promoción</h2>
+
+            <div id="all-inclusive" class="carousel carousel-dark slide w-75 mt-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                        <div class="d-flex justify-content-center">
+                            <article class="card w-25 mx-3 mb-3">
+                                <figure>
+                                    <img src="/img/italia.jpg" class="d-block w-100 card-img-top" alt="Italia">
+                                </figure>
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">Italia</h3>
+                                    <p class="card-text w-75">
+                                        Precio por persona desde <s class="text-success">USD$ 2.850</s> 
+                                    </p>
+                                    <p>
+                                        <strong class="text-success fs-5">USD$ 2.599</strong>
+                                    </p>
+                                    <a href="#all-inclusive-detail" class="btn btn-primary w-75 mx-auto">Quiero saber más!</a>
+                                </div>
+                            </article>
+
+                            <article class="card w-25 mx-3 mb-3" >
+                                <figure>
+                                    <img src="./img/home/allInclusives/punta-cana.jpg" class="d-block w-100 card-img-top" alt="Punta Cana">
+                                </figure>
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">All inclusive Punta Cana</h3>
+                                    <p class="card-text w-75">
+                                        Precio por persona desde <s class="text-success">USD$ 2.500</s>
+                                    </p>
+                                        <strong class="text-success fs-5">USD$ 2.000</strong>
+                                    </p>
+                                    <a href="all-inclusive-detail.html" class="btn btn-primary w-75 mx-auto mt-2">Quiero saber más!</a>
+                                </div>
+                            </article>
+
+                            <article class="card w-25 mx-3 mb-3">
+                                <figure>
+                                    <img src="./img/islandia.jpg" class="d-block w-100 card-img-top" alt="Islandia">
+                                </figure>
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">Islandia</h3>
+                                    <p class="card-text w-75">
+                                        Precio por persona desde <s class="text-success">USD$ 1.300</s>
+                                    </p>
+                                    <p>
+                                        <strong class="text-success fs-5">USD$ 1.200</strong>
+                                    </p>
+                                    <a href="#" class="btn btn-primary w-75 mx-auto mt-4">Quiero saber más!</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <article class="card w-25 mx-3 mb-3">
+                                <figure>
+                                    <img src="./img/italia.jpg" class="d-block w-100 card-img-top" alt="Italia">
+                                </figure>
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">Italia</h3>
+                                    <p class="card-text w-75">
+                                        Precio por persona desde <s class="text-success">USD$ 2.850</s> 
+                                    </p>
+                                    <p>
+                                        <strong class="text-success fs-5">USD$ 2.599</strong>
+                                    </p>
+                                    <a href="#" class="btn btn-primary w-75 mx-auto">Quiero saber más!</a>
+                                </div>
+                            </article>
+
+                            <article class="card w-25 mx-3 mb-3" >
+                                <figure>
+                                    <img src="./img/francia.jpg" class="d-block w-100 card-img-top" alt="París">
+                                </figure>
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">París</h3>
+                                    <p class="card-text w-75">
+                                        Precio por persona desde <s class="text-success">USD$ 1.550</s>
+                                    </p>
+                                    <p>
+                                        <strong class="text-success fs-5">USD$ 1.200</strong>
+                                    </p>
+                                    <a href="#" class="btn btn-primary w-75 mx-auto mt-2">Quiero saber más!</a>
+                                </div>
+                            </article>
+
+                            <article class="card w-25 mx-3 mb-3">
+                                <figure>
+                                    <img src="./img/islandia.jpg" class="d-block w-100 card-img-top" alt="Islandia">
+                                </figure>
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">Islandia</h3>
+                                    <p class="card-text w-75">
+                                        Precio por persona desde <s class="text-success">USD$ 1.300</s>
+                                    </p>
+                                    <p>
+                                        <strong class="text-success fs-5">USD$ 1.200</strong>
+                                    </p>
+                                    <a href="#" class="btn btn-primary w-75 mx-auto mt-4">Quiero saber más!</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+              
+                <button class="carousel-control-prev" type="button" data-bs-target="#all-inclusive" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#all-inclusive" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="promotion-hotels" class="d-flex flex-column align-items-center mt-5">
+            <h2 class="bg-primary">Hoteles en promoción</h2>
+
+            <div id="hotels" class="carousel carousel-dark slide w-75 mt-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                        <div class="d-flex justify-content-center">
+                            <article class="card w-25 mx-3 mb-3">
+                                <figure>
+                                    <img src="/img/italia.jpg" class="d-block w-100 card-img-top" alt="Italia">
+                                </figure>
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">Italia</h3>
+                                    <p class="card-text w-75">
+                                        Precio por persona desde <s class="text-success">USD$ 2.850</s> 
+                                    </p>
+                                    <p>
+                                        <strong class="text-success">USD$ 2.599</strong>
+                                    </p>
+                                    <a href="#" class="btn btn-primary w-75 mx-auto">Quiero saber más!</a>
+                                </div>
+                            </article>
+
+                            <article class="card w-25 mx-3 mb-3" >
+                                <figure>
+                                    <img src="./img/francia.jpg" class="d-block w-100 card-img-top" alt="...">
+                                </figure>
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">París</h3>
+                                    <p class="card-text w-75">
+                                        Precio por persona desde <s class="text-success">USD$ 1.550</s>
+                                    </p>
+                                    <p>
+                                        <strong class="text-success">USD$ 1.200</strong>
+                                    </p>
+                                    <a href="#" class="btn btn-primary w-75 mx-auto mt-2">Quiero saber más!</a>
+                                </div>
+                            </article>
+
+                            <article class="card w-25 mx-3 mb-3">
+                                <figure>
+                                    <img src="./img/islandia.jpg" class="d-block w-100 card-img-top" alt="Islandia">
+                                </figure>
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">Islandia</h3>
+                                    <p class="card-text w-75">
+                                        Precio por persona desde <s class="text-success">USD$ 1.300</s>
+                                    </p>
+                                    <p>
+                                        <strong class="text-success">USD$ 1.200</strong>
+                                    </p>
+                                    <a href="#" class="btn btn-primary w-75 mx-auto mt-4">Quiero saber más!</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <article class="card w-25 mx-3 mb-3">
+                                <figure>
+                                    <img src="./img/italia.jpg" class="d-block w-100 card-img-top" alt="Italia">
+                                </figure>
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">Italia</h3>
+                                    <p class="card-text w-75">
+                                        Precio por persona desde <s class="text-success">USD$ 2.850</s> 
+                                    </p>
+                                    <p>
+                                        <strong class="text-success">USD$ 2.599</strong>
+                                    </p>
+                                    <a href="#" class="btn btn-primary w-75 mx-auto">Quiero saber más!</a>
+                                </div>
+                            </article>
+
+                            <article class="card w-25 mx-3 mb-3" >
+                                <figure>
+                                    <img src="./img/francia.jpg" class="d-block w-100 card-img-top" alt="París">
+                                </figure>
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">París</h3>
+                                    <p class="card-text w-75">
+                                        Precio por persona desde <s class="text-success">USD$ 1.550</s>
+                                    </p>
+                                    <p>
+                                        <strong class="text-success">USD$ 1.200</strong>
+                                    </p>
+                                    <a href="#" class="btn btn-primary w-75 mx-auto mt-2">Quiero saber más!</a>
+                                </div>
+                            </article>
+
+                            <article class="card w-25 mx-3 mb-3">
+                                <figure>
+                                    <img src="./img/islandia.jpg" class="d-block w-100 card-img-top" alt="Islandia">
+                                </figure>
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">Islandia</h3>
+                                    <p class="card-text w-75">
+                                        Precio por persona desde <s class="text-success">USD$ 1.300</s>
+                                    </p>
+                                    <p>
+                                        <strong class="text-success">USD$ 1.200</strong>
+                                    </p>
+                                    <a href="#" class="btn btn-primary w-75 mx-auto mt-4">Quiero saber más!</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+              
+                <button class="carousel-control-prev" type="button" data-bs-target="#hotels" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#hotels"  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="popular-excusions" class="d-flex flex-column align-items-center mt-5">
+            <h2 class="bg-primary">Excursiones populares alrededor del mundo</h2>
+
+            <div id="excursions" class="carousel carousel-dark slide w-75 mt-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                        <div class="d-flex justify-content-center">
+                            <article class="card w-25 mx-3 mb-3">
+                                <figure>
+                                    <img src="./img/home/excursions/buggie.jpg" class="card-img-top" alt="Buggie en Punta Cana">
+                                </figure>
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">Buggie de medio día a la cueva el agua y la playa de Macao</h3>
+                                    <figure class="d-flex">
+                                        <img src="/img/common/location-black.svg">
+                                        <p class="mt-3 ms-1">Punta Cana.</p>
+                                    </figure>
+                                    <p class="card-text w-75">
+                                        Precio por persona 
+                                        <strong class="fs-5 text-success d-block">USD $20</strong>
+                                    </p>
+                                    <a href="#" class="btn btn-primary w-75 mx-auto mt-4">Quiero saber más!</a>
+                                </div>
+                            </article>
+
+                            <article class="card w-25 mx-3 mb-3">
+                                <figure>
+                                    <img src="/img/home/excursions/magic-kingdom.jpg" " class="card-img-top" alt="Magic Kindom, Orlando">
+                                </figure>
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">Día completo en Magic Kingdom</h3>
+                                    <figure class="d-flex">
+                                        <img src="/img/common/location-black.svg">
+                                        <p class="mt-3 ms-1">Orlando, Florida.</p>
+                                    </figure>
+                                    <p class="card-text w-75">
+                                        Precio por persona 
+                                        <strong class="fs-5 text-success d-block">USD$ 189</strong>
+                                    </p>
+                                    <a href="#" class="btn btn-primary w-75 mx-auto mt-4">Quiero saber más!</a>
+                                </div>
+                            </article>
+
+                            <article class="card w-25 mx-3 mb-3">
+                                <figure>
+                                    <img src="/img/home/excursions/glaciar.jpg" class="card-img-top" alt="Glaciar Perito Moreno">
+                                </figure>
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">Visita al glaciar Perito Moreno</h3>
+                                    <figure class="d-flex">
+                                        <img src="/img/common/location-black.svg">
+                                        <p class="mt-3 ms-1">El calafate, Santa Cruz, Argentina.</p>
+                                    </figure>
+                                    <p class="card-text w-75">
+                                        Precio por persona 
+                                        <strong class="fs-5 text-success d-block">ARS$ 212.440</strong>
+                                    </p>
+                                    <a href="#" class="btn btn-primary w-75 mx-auto mt-4">Quiero saber más!</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <article class="card w-25 mx-3 mb-3">
+                                <figure>
+                                    <img src="/img/home/excursions/venecia.jpg" class="card-img-top" alt="Gran Canal de Venecia">
+                                </figure>
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">Paseo por el Gran Canal</h3>
+                                    <figure class="d-flex">
+                                        <img src="/img/common/location-black.svg">
+                                        <p class="mt-3 ms-1">Venecia, Italia.</p>
+                                    </figure>
+                                    <p class="card-text w-75">
+                                        Precio por persona 
+                                        <strong class="fs-5 text-success d-block">ARS$ 105.500</strong>
+                                    </p>
+                                    <a href="#" class="btn btn-primary w-75 mx-auto mt-4">Quiero saber más!</a>
+                                </div>
+                            </article>
+
+                            <article class="card w-25 mx-3 mb-3">
+                                <figure>
+                                    <img src="./img/islandia.jpg" class="card-img-top" alt="Glaciar Perito Moreno">
+                                </figure>
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">Visita al glaciar Perito Moreno</h3>
+                                    <figure class="d-flex">
+                                        <img src="/img/common/location-black.svg">
+                                        <p class="mt-3 ms-1">El calafate, Santa Cruz, Argentina.</p>
+                                    </figure>
+                                    <p class="card-text w-75">
+                                        Precio por persona 
+                                        <strong class="fs-5 text-success d-block">ARS$ 212.440</strong>
+                                    </p>
+                                    <a href="#" class="btn btn-primary w-75 mx-auto mt-4">Quiero saber más!</a>
+                                </div>
+                            </article>
+
+                            <article class="card w-25 mx-3 mb-3">
+                                <figure>
+                                    <img src="./img/islandia.jpg" class="card-img-top" alt="Glaciar Perito Moreno">
+                                </figure>
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">Visita al glaciar Perito Moreno</h3>
+                                    <figure class="d-flex">
+                                        <img src="/img/common/location-black.svg">
+                                        <p class="mt-3 ms-1">El calafate, Santa Cruz, Argentina.</p>
+                                    </figure>
+                                    <p class="card-text w-75">
+                                        Precio por persona 
+                                        <strong class="fs-5 text-success d-block">ARS$ 212.440</strong>
+                                    </p>
+                                    <a href="#" class="btn btn-primary w-75 mx-auto mt-4">Quiero saber más!</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+              
+                <button class="carousel-control-prev" type="button" data-bs-target="#excusions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#excusions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        
+        <section id="about-us" class="d-flex justify-content-center mt-5">
+            <div class="w-75 bg-secondary card">
+                <h2 class="text-center mt-4 bg-primary">Nosotros</h2>
+                <div class="mx-5">
+                    <p>
+                        En <strong>Latitud sin límites</strong> convertimos tus sueños de viaje en realidad.
+                        Con años de experiencia, miles de viajeron satisfechos y una pasion por explorar, hacemos que cada aventura sea única e inolvidable.
+                    </p>
+                    <p class="bg-primary max-content">
+                        ¡Ahora puedes crear tu propio paquete de viaje!
+                    </p>
+                    <p class="bg-primary max-content">
+                        Elige vuelos, hoteles y actividades y agregalo todo a tu paquete en línea para diseñar el viaje perfecto para tí.
+                    </p>
+                    <p>
+                        La aventura comienza con solo unos clicks!
+                    </p>
+                    
+                    <ul class="list-inline d-flex justify-content-between">
+                        <li class="w-25 list-inline-item">
+                            <figure>
+                                <img src="img/brasil.jpg" alt="Hogwarts" class="w-100">
+                                <figcaption>98% de satisfacción en encuestas</figcaption>
+                            </figure>
+                        </li>
+                        <li class="w-25 list-inline-item">
+                            <figure>
+                                <img src="img/brasil.jpg" alt="Hogwarts" class="w-100">
+                                <figcaption>1.200 reservas al año gestionadas con éxito<figcaption>
+                            </figure>
+                        </li>
+                        <li class="w-25 list-inline-item">
+                            <figure>
+                                <img src="img/brasil.jpg" alt="Hogwarts" class="w-100">
+                                <figcaption>10 años de experiencia en el sector turístico</figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer" class="bg-dark text-light d-flex p-4 align-items-center justify-content-evenly mt-5">
+        <ul class="contact col-3">
+            <li>consultas@latitudsinlimites.com</li>
+            <li>+54 011 5805-9268</li>
+            <li>Avenida Corrientes 1548, CABA</li>
+        </ul>
+
+        <figure class="col-3 d-flex justify-content-center align-items-center">
+            <img src="/img/common/logo-agencia.png" class="col-6"/>
+        </figure>
+
+        <div class="d-flex flex-column align-items-end col-3">
+            <ul class="list-inline pr-0 d-flex justify-content-between">
+                <li class="list-inline-item">
+                    <a href="">
+                        <img src="img/footer/facebook-logo.svg" alt="Facebook" class="col-6">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="">
+                        <img src="img/footer/tiktok-logo.svg" alt="Tik Tok" class="col-6">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="">
+                        <img src="img/footer/twitter-logo.svg" alt="Twitter" class="col-6">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="">
+                        <img src="img/footer/instagram-logo.svg" alt="Instagram" class="col-6">
+                    </a>
+                </li>
+            </ul>
+            <p class="text-left w-100">Horario de atención de 9hs a 18hs</p>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>

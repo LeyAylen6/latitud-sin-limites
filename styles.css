@@ -1,0 +1,138 @@
+/* :root {
+    --bs-primary: #23c29d;
+} */
+
+/* ! Personalizacion botones */
+.btn-primary {
+    background-color: #23c29d !important;
+    border-color: #34c2a2 !important;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+}
+
+.btn-primary:hover {
+    opacity: .7;
+}
+
+.btn-action {
+    background-color: #ff6333 !important;
+    border-color: #ff6333 !important;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+}
+
+.btn-action:hover {
+    opacity: .7;
+}
+
+/* ! Personalizacion Background */
+.bg-primary {
+    background-color: #23c29d !important;
+    border-radius: 10px;
+}
+
+.bg-secondary {
+    background-color: #eeeeee !important;
+}
+
+.bg-promotion {
+    background-color: #ff6333;
+}
+
+/* ! CSS extra */
+.card {
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+}
+
+.carousel-control-prev {
+  transform: translateX(-30%);
+}
+
+.carousel-control-next {
+    transform: translateX(30%);
+}
+
+.max-content {
+    width: max-content;
+}
+
+.contact li:nth-child(1) {
+    list-style-image: url("img/footer/mail.svg");
+}
+
+.contact li:nth-child(2) {
+    list-style-image: url("img/footer/call.svg");
+}
+
+.contact li:nth-child(3) {
+    list-style-image: url("img/footer/location.svg");
+}
+
+.triangle {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 37% 50%);
+}
+
+.background-image {
+    background-image: url("/img/common/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+
+.height-700 {
+    height: 600px;
+}
+
+.shadow {
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+}
+
+.bg-opacity {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.top-50 {
+    top: 50px !important;
+}
+
+.mt-100 {
+    margin-top: 100px !important;
+}
+
+.width-75 {
+    width: 75px !important;
+}
+
+/* ! Detail - Flight */
+.flight-detail li:nth-child(1) {
+    list-style-image: url("img/detail/flight/check.svg");
+}
+
+.flight-detail li:nth-child(2) {
+    list-style-image: url("img/common/clock.svg");
+}
+
+/* ! Detail - Excursion */
+.excursion-detail li:nth-child(1) {
+    list-style-image: url("img/common/clock.svg");
+}
+
+.excursion-detail li:nth-child(2) {
+    list-style-image: url("img/detail/excursions/person.svg");
+}
+
+/* ! My Trip - Flight*/
+.mb-95 {
+    margin-bottom: 95px;
+}
+
+.schedule-list li {
+    list-style-image: url("img/my-trip/calendar.svg");
+}
