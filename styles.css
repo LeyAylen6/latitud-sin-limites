@@ -44,7 +44,7 @@
 }
 
 .carousel-control-prev {
-  transform: translateX(-30%);
+    transform: translateX(-30%);
 }
 
 .carousel-control-next {
@@ -52,7 +52,7 @@
 }
 
 .max-content {
-    width: max-content;
+    width: auto;
 }
 
 .contact li:nth-child(1) {
@@ -129,10 +129,112 @@
 }
 
 /* ! My Trip - Flight*/
-.mb-95 {
-    margin-bottom: 95px;
-}
-
 .schedule-list li {
     list-style-image: url("img/my-trip/calendar.svg");
+}
+
+
+/* ! Carousel */
+
+/* @media (max-width: 576px) {
+    .carousel {
+        width: 100% !important;
+    }
+
+    .card {
+      width: 100% !important;
+    }
+  
+    .card-title {
+      font-size: 1.25rem !important; 
+    }
+  
+    .card-body {
+      font-size: 0.875rem;
+    }
+  }
+  
+  @media (min-width: 577px) and (max-width: 768px) {
+    .carousel {
+        width: 100% !important;
+    }
+
+    .card {
+      width: 50% !important; 
+    }
+  
+    .card-title {
+      font-size: 1.5rem !important;
+    }
+  
+    .card-body {
+      font-size: 1rem; 
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 992px) {
+    .carousel {
+        width: 100% !important;
+    }
+
+    .card {
+      width: 30% !important;
+    }
+  
+    .card-title {
+      font-size: 1rem !important; 
+    }
+  
+    .card-body {
+      font-size: 1.125rem !important; 
+    }
+  }
+
+  @media (min-width: 993px) {
+    .carousel {
+        width: 95% !important;
+    } 
+
+    .card {
+      width: 20% !important;
+    }
+  
+    .card-body {
+      font-size: 20px;
+    }
+  }
+   */
+
+@media (max-width: 993px) {
+    .fs-2 {
+        font-size: 35px !important;
+    }
+
+    .fs-3 {
+        font-size: 30px !important;
+    }
+
+    .fs-4 {
+        font-size: 25px !important;
+    }
+
+    .fs-5 {
+        font-size: 18px !important;
+    }
+
+    figcaption,
+    ul li {
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 769px) {
+
+    .fs-3 {
+        font-size: 25px !important;
+    }
+
+    .fs-4 {
+        font-size: 20px !important;
+    }
 }

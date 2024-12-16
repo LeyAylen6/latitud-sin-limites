@@ -17,7 +17,7 @@
 
             <div class="collapse navbar-collapse fs-3 ms-4" id="navbar">
                
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="/img/common/logo-agencia.png" alt="Latitud Sin Límites Logo" class="col-4">
                     <h1 class="text-light d-none">Latitud Sin Límites</h1>
                 </a>
@@ -41,9 +41,15 @@
                     <li class="nav-item">
                         <a class="nav-link text-light" href="faqs.html">FAQs</a>
                     </li>
+                    <li class="nav-item col-1">
+                        <a class="nav-link" href="my-trip.html">
+                            <img src="/img/common/luggage.svg" alt="Mi viaje logo" class="col-8">
+                        </a>
+                    </li>
                  </ul>
             </div>
         </nav>
+        
     </header>
     <main>
         <section id="home" class="background-image w-100 d-flex flex-column justify-content-end height-700">
@@ -57,8 +63,8 @@
             </div>  
         
             <div class="col-12 d-flex justify-content-center z-1 position-relative text-light fs-5 top-50">
-                <form action="" method="post" class="w-75 w-sm-80 w-md-75 w-lg-75 w-xl-90 bg-primary d-flex justify-content-evenly align-items-center p-4 rounded-4">
-                    <div class="col-10 py-4">
+                <form action="#" method="post" class="w-75 bg-primary d-flex flex-column flex-md-row justify-content-evenly align-items-center p-4 rounded-4">
+                    <div class="col-10 col-xs-12 py-4">
                         <div class="d-flex flex-wrap justify-content-evenly">
                             <div class="form-check form-check-inline">
                                 <input id="flights" type="radio" name="serviceType" value="flights" class="form-check-input">
@@ -78,8 +84,8 @@
                             </div>
                         </div>
         
-                        <div class="d-flex flex-column flex-wrap flex-md-row justify-content-evenly mt-4">
-                            <div class="form-group col-12 col-sm-4 col-md-5 col-lg-2">
+                        <div class="d-flex flex-wrap flex-row justify-content-evenly mt-4">
+                            <div class="form-group col-12 col-sm-5 col-md-5 col-lg-2">
                                 <label for="name">Origen</label>
                                 <input id="name" type="text" name="name" placeholder="Ingresa desde dónde via.." class="form-control">
                             </div>
@@ -95,7 +101,7 @@
                                 <label for="return-date">Fecha vuelta</label>
                                 <input id="return-date" type="date" name="return-date" class="form-control">
                             </div>
-                            <div class="form-group col-12 col-sm-5 col-md-3 col-lg-1">
+                            <div class="form-group col-12 col-sm-3 col-md-3 col-lg-1">
                                 <label for="passengers">Pasajeros</label>
                                 <select class="form-select">
                                     <option value="1">1</option>
@@ -108,7 +114,7 @@
                         </div>
                     </div>
         
-                    <button type="submit" class="btn btn-action text-center py-2 rounded-4 text-light fs-5 col-2">
+                    <button type="submit" class="btn btn-action text-center py-2 rounded-4 text-light fs-5 col-5 col-md-2">
                         Buscar
                     </button>
                 </form>
@@ -116,16 +122,16 @@
         </section>
 
         <section id="promotion" class="d-flex text-light bg-secondary my-5 shadow mt-100">
-            <figure class="d-flex col-7 mt-2"> 
-                <img src="/img/home/promotion/valija.png" class="col-5"/>
-                <figcaption class="col-8 text-black ms-5 my-auto">
-                    <h2 class="fs-4 col-7"><strong>Paga menos comprando tu vuelo junto con un hotel</strong></h2>
-                    <p class="col-6">Aprovecha la promoción y ahorrá hasta un 20% en tu viaje</p>
+            <figure class="d-flex col-5 col-sm-5 col-md-7 flex-column flex-md-row mt-2"> 
+                <img src="/img/home/promotion/valija.png" class="col-9 col-md-7 col-lg-5"/>
+                <figcaption class="col-12 col-md-8 text-black ms-5 my-auto">
+                    <h2 class="fs-4 col-11 col-md-7"><strong>Paga menos comprando tu vuelo junto con un hotel</strong></h2>
+                    <p class="col-10 col-md-6">Aprovecha la promoción y ahorrá hasta un 20% en tu viaje</p>
                 </figcaption>
             </figure>
-            <aside class="col-5 triangle bg-promotion d-flex justify-content-end align-items-center">
-                <p class="fs-5 text-center col-4 me-5">
-                    <strong class="fs-2 rounded-4 bg-opacity max-content px-2 my-5">10% OFF</strong> 
+            <aside class="col-7 col-sm-7 col-md-5 triangle bg-promotion d-flex justify-content-end align-items-center">
+                <p class="fs-5 text-center col-7 col-sm-5 col-md-5 col-lg-4 me-0 me-sm-5 me-md-5 me-lg-5">
+                    <strong class="fs-2 rounded-4 bg-opacity px-2 my-5">10% OFF</strong> 
                     <strong class="fs-5 d-block">EXTRA</strong> 
                     pagando con debito, dinero en cuenta o en 1 cuota.
                 </p>
@@ -137,14 +143,14 @@
 
             <div id="flights" class="carousel carousel-dark slide w-75 mt-4" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active ">
-                        <div class="d-flex justify-content-center">
-                            <article class="card w-25 mx-3 mb-3">
+                    <div class="carousel-item active" >
+                        <div class="d-flex justify-content-center col-md-2 col-lg-12">
+                            <article class="card w-25 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3">
                                 <figure>
                                     <img src="/img/home/flights/italia.jpg" class="d-block w-100 card-img-top" alt="Italia">
                                 </figure>
                                 <div class="card-body d-flex flex-column">
-                                    <h3 class="card-title">Italia</h3>
+                                    <h3 class="card-title fs-4">Italia</h3>
                                     <p class="card-text w-75">
                                         Precio por persona desde <s class="text-success">USD$ 2.850</s> 
                                     </p>
@@ -155,12 +161,12 @@
                                 </div>
                             </article>
 
-                            <article class="card w-25 mx-3 mb-3" >
+                            <article class="card w-25 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3" >
                                 <figure>
                                     <img src="./img/home/flights/francia.jpg" class="d-block w-100 card-img-top" alt="...">
                                 </figure>
                                 <div class="card-body d-flex flex-column">
-                                    <h3 class="card-title">París</h3>
+                                    <h3 class="card-title fs-4">París</h3>
                                     <p class="card-text w-75">
                                         Precio por persona desde <s class="text-success">USD$ 1.550</s>
                                     </p>
@@ -171,12 +177,12 @@
                                 </div>
                             </article>
 
-                            <article class="card w-25 mx-3 mb-3">
+                            <article class="card w-25 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3">
                                 <figure>
                                     <img src="./img/home/flights/islandia.jpg" class="d-block w-100 card-img-top" alt="Islandia">
                                 </figure>
                                 <div class="card-body d-flex flex-column">
-                                    <h3 class="card-title">Islandia</h3>
+                                    <h3 class="card-title fs-4">Islandia</h3>
                                     <p class="card-text w-75">
                                         Precio por persona desde <s class="text-success">USD$ 1.300</s>
                                     </p>
@@ -190,12 +196,12 @@
                     </div>
                     <div class="carousel-item">
                         <div class="d-flex justify-content-center">
-                            <article class="card w-25 mx-3 mb-3">
+                            <article class="card w-25 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3">
                                 <figure>
                                     <img src="./img/home/flights/italia.jpg" class="d-block w-100 card-img-top" alt="Italia">
                                 </figure>
                                 <div class="card-body d-flex flex-column">
-                                    <h3 class="card-title">Italia</h3>
+                                    <h3 class="card-title fs-4">Italia</h3>
                                     <p class="card-text w-75">
                                         Precio por persona desde <s class="text-success">USD$ 2.850</s> 
                                     </p>
@@ -206,12 +212,12 @@
                                 </div>
                             </article>
 
-                            <article class="card w-25 mx-3 mb-3" >
+                            <article class="card w-25 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3" >
                                 <figure>
                                     <img src="./img/home/flights/francia.jpg" class="d-block w-100 card-img-top" alt="París">
                                 </figure>
                                 <div class="card-body d-flex flex-column">
-                                    <h3 class="card-title">París</h3>
+                                    <h3 class="card-title fs-4">París</h3>
                                     <p class="card-text w-75">
                                         Precio por persona desde <s class="text-success">USD$ 1.550</s>
                                     </p>
@@ -222,12 +228,12 @@
                                 </div>
                             </article>
 
-                            <article class="card w-25 mx-3 mb-3">
+                            <article class="card w-25 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3">
                                 <figure>
                                     <img src="./img/home/flights/islandia.jpg" class="d-block w-100 card-img-top" alt="Islandia">
                                 </figure>
                                 <div class="card-body d-flex flex-column">
-                                    <h3 class="card-title">Islandia</h3>
+                                    <h3 class="card-title fs-4">Islandia</h3>
                                     <p class="card-text w-75">
                                         Precio por persona desde <s class="text-success">USD$ 1.300</s>
                                     </p>
@@ -259,7 +265,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active ">
                         <div class="d-flex justify-content-center">
-                            <article class="card w-25 mx-3 mb-3">
+                            <article class="card w-25 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3">
                                 <figure>
                                     <img src="/img/italia.jpg" class="d-block w-100 card-img-top" alt="Italia">
                                 </figure>
@@ -275,7 +281,7 @@
                                 </div>
                             </article>
 
-                            <article class="card w-25 mx-3 mb-3" >
+                            <article class="card w-25 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3" >
                                 <figure>
                                     <img src="./img/home/allInclusives/punta-cana.jpg" class="d-block w-100 card-img-top" alt="Punta Cana">
                                 </figure>
@@ -290,7 +296,7 @@
                                 </div>
                             </article>
 
-                            <article class="card w-25 mx-3 mb-3">
+                            <article class="card w-25 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3">
                                 <figure>
                                     <img src="./img/islandia.jpg" class="d-block w-100 card-img-top" alt="Islandia">
                                 </figure>
@@ -309,7 +315,7 @@
                     </div>
                     <div class="carousel-item">
                         <div class="d-flex justify-content-center">
-                            <article class="card w-25 mx-3 mb-3">
+                            <article class="card w-25 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3">
                                 <figure>
                                     <img src="./img/italia.jpg" class="d-block w-100 card-img-top" alt="Italia">
                                 </figure>
@@ -325,7 +331,7 @@
                                 </div>
                             </article>
 
-                            <article class="card w-25 mx-3 mb-3" >
+                            <article class="card w-25 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3" >
                                 <figure>
                                     <img src="./img/francia.jpg" class="d-block w-100 card-img-top" alt="París">
                                 </figure>
@@ -341,7 +347,7 @@
                                 </div>
                             </article>
 
-                            <article class="card w-25 mx-3 mb-3">
+                            <article class="card w-25 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3">
                                 <figure>
                                     <img src="./img/islandia.jpg" class="d-block w-100 card-img-top" alt="Islandia">
                                 </figure>

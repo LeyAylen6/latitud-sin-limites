@@ -49,139 +49,142 @@
     </header>
     <main>
         <section class="d-flex flex-column align-items-center">
-            <h2 class="bg-primary max-content mt-4 px-2">Mi Paquete</h2>
-            <div class="d-flex flex-row justify-content-evenly">
-                <form action="#" method="post" class="col-8 mt-2 d-flex flex-column align-items-center">
-                    <article class="card d-flex flex-row justify-content-evenly align-items-center mt-3">
-                        <figure class="col-5">
-                            <img src="/img/home/hotels/golden-hotel.jpeg" alt="Deluxe Golden Hotel" class="col-12">
-                        </figure>
-                        <div class="col-5"> 
-                            <h3 class="card-title fs-4 px-2 bg-primary max-content">
-                                Deluxe Golden Hotel
-                            </h3>
-                            <div class="form-group pt-3">
-                                <label for="rooms">Habitaciones</label> 
-                                <div class="d-flex col-4 mt-1">
-                                    <img src="img/my-trip/room.svg" alt="Icono habitación" class="col-3 me-2"> 
-                                    <select id="rooms" name="rooms" class="form-select">
-                                        <option value="1" selected>1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                    </select>
+            <h2 class="bg-primary max-content mt-4 px-2">
+                Mi Paquete
+            </h2>
+            <form action="#" method="post" class="d-flex flex-column align-items-center">
+                <div class="d-flex flex-column flex-lg-row justify-content-evenly align-items-center">
+                    <div class="col-11 col-lg-8 col-xl-8 mt-2 d-flex flex-column align-items-center">
+                        <article class="card d-flex flex-row justify-content-evenly align-items-center mt-3">
+                            <figure class="col-5">
+                                <img src="/img/home/hotels/golden-hotel.jpeg" alt="Deluxe Golden Hotel" class="col-12">
+                            </figure>
+                            <div class="col-5"> 
+                                <h3 class="card-title">
+                                    Deluxe Golden Hotel
+                                </h3>
+                                <div class="form-group pt-3">
+                                    <label for="rooms">Habitaciones</label> 
+                                    <div class="d-flex col-4 mt-1">
+                                        <img src="img/my-trip/room.svg" alt="Icono habitación" class="me-2"> 
+                                        <select id="rooms" name="rooms" class="form-select">
+                                            <option value="1" selected>1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label for="members-hotel">Integrantes</label>
+                                    <div class="d-flex justify-content-evenly col-4 my-2">
+                                        <img src="img/detail/excursions/person.svg" alt="Icono integrante" class="me-2"> 
+                                        <select id="members-hotel" name="members" class="form-select">
+                                            <option value="1">1</option>
+                                            <option value="2" selected>2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="form-group mt-3">
-                                <label for="members-hotel">Integrantes</label>
-                                <div class="d-flex justify-content-evenly col-4">
-                                    <img src="img/detail/excursions/person.svg" alt="Icono integrante" class="me-2"> 
-                                    <select id="members-hotel" name="members" class="form-select">
-                                        <option value="1">1</option>
-                                        <option value="2" selected>2</option>
-                                        <option value="3">3</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+                        </article>
                     
-                    <article class="card d-flex flex-row justify-content-evenly mt-3">
-                        <figure class="col-5 mt-3">
-                            <img src="img/home/excursions/magic-kingdom.jpg" alt="Excursion a Magic Kingdom" class="col-12">
-                        </figure>
-                        <div class="col-5">
-                            <h3 class="card-title fs-4 mt-4 px-2 bg-primary max-content">
-                                Dia completo en Magic Kingdom
-                            </h3>
+                        <article class="card d-flex flex-row justify-content-evenly mt-3">
+                            <figure class="col-5 mt-3">
+                                <img src="img/home/excursions/magic-kingdom.jpg" alt="Excursion a Magic Kingdom" class="col-12">
+                            </figure>
+                            <div class="col-5">
+                                <h3 class="card-title mt-4">
+                                    Dia completo en Magic Kingdom
+                                </h3>
 
-                            <div class="form-group mt-4">
-                                <label for="members-excursions">Integrantes</label>
-                                <div class="d-flex justify-content-evenly col-4 mt-1">
-                                    <img src="img/detail/excursions/person.svg" alt="Icono integrante" class="me-2">
-                                    <select id="members-excursions" name="members" class="form-select">
-                                        <option value="1">1</option>
-                                        <option value="2" selected>2</option>
-                                        <option value="3">3</option>
-                                    </select>
-                                </div>
-                            </div> 
-                        </div>
-                    </article>
-
-                    <article class="card d-flex flex-row justify-content-evenly mt-3">
-                        <figure class="col-5 mt-3">
-                            <img src="/img/home/flights/new-york.jpeg" alt="Vuelo Nueva York" class="col-12">
-                        </figure>
-                        <div class="col-5">
-                            <h3 class="card-title fs-4 px-2 mt-4 bg-primary max-content">
-                                Vuelo a Nueva York
-                            </h3>
-                            <p class="text-secondary">- Desde Buenos Aires</p >
-        
-                            <div class="form-group">
-                                <label for="members-flight">Integrantes</label>
-                                <div class="d-flex justify-content-evenly col-4 mt-1">
-                                    <img src="img/detail/excursions/person.svg" alt="Icono integrante" class="me-2">
-                                    <select id="members-flight" name="members" class="form-select">
-                                        <option value="1">1</option>
-                                        <option value="2" selected>2</option>
-                                        <option value="3">3</option> 
-                                    </select>
-                                </div>
+                                <div class="form-group mt-4">
+                                    <label for="members-excursions">Integrantes</label>
+                                    <div class="d-flex justify-content-evenly col-4 my-2">
+                                        <img src="img/detail/excursions/person.svg" alt="Icono integrante" class="me-2">
+                                        <select id="members-excursions" name="members" class="form-select">
+                                            <option value="1">1</option>
+                                            <option value="2" selected>2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+                                </div> 
                             </div>
-                            <ul class="mt-4 schedule-list">
-                                <li>Ida: 16/12/2024</li>
-                                <li>Vuelta: 26/12/2024</li>
-                            </ul>
-                        </div>
-                    </article>
-                    <button type="submit" class="btn btn-action fs-4 p-2 mt-5 text-light col-2">
-                        Ir a pagar
-                    </button> 
-                </form>
+                        </article>
 
-                <article class="card col-3 mb-95 p-4">
-                    <h3>Resumen de compra</h3>
+                        <article class="card d-flex flex-row justify-content-evenly mt-3">
+                            <figure class="col-5 mt-3">
+                                <img src="/img/home/flights/new-york.jpeg" alt="Vuelo Nueva York" class="col-12">
+                            </figure>
+                            <div class="col-5">
+                                <h3 class="card-title mt-4">
+                                    Vuelo a Nueva York
+                                </h3>
+                                <p class="text-secondary">- Desde Buenos Aires</p >
+            
+                                <div class="form-group">
+                                    <label for="members-flight">Integrantes</label>
+                                    <div class="d-flex justify-content-evenly col-4 mt-1">
+                                        <img src="img/detail/excursions/person.svg" alt="Icono integrante" class="me-2">
+                                        <select id="members-flight" name="members" class="form-select">
+                                            <option value="1">1</option>
+                                            <option value="2" selected>2</option>
+                                            <option value="3">3</option> 
+                                        </select>
+                                    </div>
+                                </div>
+                                <ul class="mt-4 schedule-list">
+                                    <li>Ida: 16/12/2024</li>
+                                    <li>Vuelta: 26/12/2024</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                    <article class="card col-11 col-lg-3 col-xl-3 p-4 mt-4">
+                        <h3>Resumen de compra</h3>
+                        
+                        <ul class="bg-primary col-7 text-center list-unstyled mx-auto mt-2">
+                            <li>10 días de hotel</li>
+                            <li>1 día de excursión</li>
+                            <li>Vuelo a Nueva York</li>
+                        </ul>
                     
-                    <ul class="bg-primary col-7 text-center list-unstyled mx-auto mt-2">
-                        <li>10 días de hotel</li>
-                        <li>1 día de excursión</li>
-                        <li>Vuelo a Nueva York</li>
-                    </ul>
-                
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Detalle</th>
-                                <th class="text-center">Precio</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Hotel</td>
-                                <td class="text-end">ARS $2.977.080</td>
-                            </tr>
-                            <tr>
-                                <td>Vuelo</td>
-                                <td class="text-end">ARS $2.304.000</td>
-                            </tr>
-                            <tr>
-                                <td>Excursión</td>
-                                <td class="text-end">USD $378</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr class="border-top">
-                                <th>Total</th>
-                                <td>
-                                    <div class="text-end">ARS $5.281.080</div>
-                                    <div class="text-end">USD $378</div>
-                                </td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </article>
-            </div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Detalle</th>
+                                    <th class="text-center">Precio</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Hotel</td>
+                                    <td class="text-end">ARS $2.977.080</td>
+                                </tr>
+                                <tr>
+                                    <td>Vuelo</td>
+                                    <td class="text-end">ARS $2.304.000</td>
+                                </tr>
+                                <tr>
+                                    <td>Excursión</td>
+                                    <td class="text-end">USD $378</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr class="border-top">
+                                    <th>Total</th>
+                                    <td>
+                                        <div class="text-end">ARS $5.281.080</div>
+                                        <div class="text-end">USD $378</div>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </article>
+                </div>
+                <button type="submit" class="btn btn-action fs-4 p-2 mt-5 text-light col-5 col-md-9 col-lg-3 col-xl-2">
+                    Ir a pagar
+                </button> 
+            </form>
         </section>
         <section class="bg-secondary mt-5 d-flex flex-column align-items-center shadow">
             <h3 class="text-center pt-4">Promociones bancarias</h3>
