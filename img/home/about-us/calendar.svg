@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="109" height="117" viewBox="0 0 109 117">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #67bfab;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #88c9bb;
+      }
+    </style>
+  </defs>
+  <path id="Rectángulo_redondeado_1" data-name="Rectángulo redondeado 1" class="cls-1" d="M22.536,21.772H86.97a10,10,0,0,1,10,10V91.293a10,10,0,0,1-10,10H22.536a10,10,0,0,1-10-10V31.772A10,10,0,0,1,22.536,21.772Z"/>
+  <path id="Rectángulo_redondeado_4" data-name="Rectángulo redondeado 4" class="cls-2" d="M26.385,68a5.435,5.435,0,0,1,5.435,5.435v0.34a5.435,5.435,0,0,1-10.87,0v-0.34A5.435,5.435,0,0,1,26.385,68Z"/>
+  <path id="Rectángulo_redondeado_4-2" data-name="Rectángulo redondeado 4" class="cls-2" d="M40.393,68a5.435,5.435,0,0,1,5.435,5.435v0.34a5.435,5.435,0,0,1-10.87,0v-0.34A5.435,5.435,0,0,1,40.393,68Z"/>
+  <path id="Rectángulo_redondeado_4-3" data-name="Rectángulo redondeado 4" class="cls-2" d="M55.106,67.661A5.435,5.435,0,0,1,60.541,73.1v0.341a5.435,5.435,0,0,1-10.87,0V73.1A5.435,5.435,0,0,1,55.106,67.661Z"/>
+  <path id="Rectángulo_redondeado_4-4" data-name="Rectángulo redondeado 4" class="cls-2" d="M68.773,67.661A5.435,5.435,0,0,1,74.208,73.1v0.341a5.435,5.435,0,0,1-10.87,0V73.1A5.435,5.435,0,0,1,68.773,67.661Z"/>
+  <path id="Rectángulo_redondeado_4-5" data-name="Rectángulo redondeado 4" class="cls-2" d="M82.792,67.661a5.423,5.423,0,0,1,5.423,5.423v0.365a5.423,5.423,0,1,1-10.846,0V73.084A5.423,5.423,0,0,1,82.792,67.661Z"/>
+  <path id="Rectángulo_redondeado_4-6" data-name="Rectángulo redondeado 4" class="cls-2" d="M26.385,38.576a5.435,5.435,0,0,1,5.435,5.435v0.34a5.435,5.435,0,1,1-10.87,0v-0.34A5.435,5.435,0,0,1,26.385,38.576Z"/>
+  <path id="Rectángulo_redondeado_4-7" data-name="Rectángulo redondeado 4" class="cls-2" d="M40.393,38.576a5.435,5.435,0,0,1,5.435,5.435v0.34a5.435,5.435,0,1,1-10.87,0v-0.34A5.435,5.435,0,0,1,40.393,38.576Z"/>
+  <path id="Rectángulo_redondeado_4-8" data-name="Rectángulo redondeado 4" class="cls-2" d="M55.106,38.235a5.435,5.435,0,0,1,5.435,5.435v0.34a5.435,5.435,0,0,1-10.87,0V43.67A5.435,5.435,0,0,1,55.106,38.235Z"/>
+  <path id="Rectángulo_redondeado_4-9" data-name="Rectángulo redondeado 4" class="cls-2" d="M68.773,38.235a5.435,5.435,0,0,1,5.435,5.435v0.34a5.435,5.435,0,0,1-10.87,0V43.67A5.435,5.435,0,0,1,68.773,38.235Z"/>
+  <path id="Rectángulo_redondeado_4-10" data-name="Rectángulo redondeado 4" class="cls-2" d="M82.792,38.235a5.423,5.423,0,0,1,5.423,5.423v0.365a5.423,5.423,0,0,1-10.846,0V43.658A5.423,5.423,0,0,1,82.792,38.235Z"/>
+  <path id="Rectángulo_redondeado_4-11" data-name="Rectángulo redondeado 4" class="cls-2" d="M26.385,82.373a5.435,5.435,0,0,1,5.435,5.435v0.341a5.435,5.435,0,0,1-10.87,0V87.809A5.435,5.435,0,0,1,26.385,82.373Z"/>
+  <path id="Rectángulo_redondeado_4-12" data-name="Rectángulo redondeado 4" class="cls-2" d="M40.393,82.373a5.435,5.435,0,0,1,5.435,5.435v0.341a5.435,5.435,0,0,1-10.87,0V87.809A5.435,5.435,0,0,1,40.393,82.373Z"/>
+  <path id="Rectángulo_redondeado_4-13" data-name="Rectángulo redondeado 4" class="cls-2" d="M55.106,82.033a5.435,5.435,0,0,1,5.435,5.435v0.34a5.435,5.435,0,1,1-10.87,0v-0.34A5.435,5.435,0,0,1,55.106,82.033Z"/>
+  <path id="Rectángulo_redondeado_4-14" data-name="Rectángulo redondeado 4" class="cls-2" d="M68.773,82.033a5.435,5.435,0,0,1,5.435,5.435v0.34a5.435,5.435,0,0,1-10.87,0v-0.34A5.435,5.435,0,0,1,68.773,82.033Z"/>
+  <path id="Rectángulo_redondeado_4-15" data-name="Rectángulo redondeado 4" class="cls-2" d="M82.792,82.033a5.423,5.423,0,0,1,5.423,5.423v0.365a5.423,5.423,0,0,1-10.846,0V87.456A5.423,5.423,0,0,1,82.792,82.033Z"/>
+  <path id="Rectángulo_redondeado_4-16" data-name="Rectángulo redondeado 4" class="cls-2" d="M40.393,53.288a5.435,5.435,0,0,1,5.435,5.435v0.34a5.435,5.435,0,0,1-10.87,0v-0.34A5.435,5.435,0,0,1,40.393,53.288Z"/>
+  <path id="Rectángulo_redondeado_4-17" data-name="Rectángulo redondeado 4" class="cls-2" d="M55.106,52.948a5.435,5.435,0,0,1,5.435,5.435v0.34a5.435,5.435,0,0,1-10.87,0v-0.34A5.435,5.435,0,0,1,55.106,52.948Z"/>
+  <path id="Rectángulo_redondeado_4-18" data-name="Rectángulo redondeado 4" class="cls-2" d="M68.773,52.948a5.435,5.435,0,0,1,5.435,5.435v0.34a5.435,5.435,0,0,1-10.87,0v-0.34A5.435,5.435,0,0,1,68.773,52.948Z"/>
+  <path id="Rectángulo_redondeado_4-19" data-name="Rectángulo redondeado 4" class="cls-2" d="M82.792,52.948a5.423,5.423,0,0,1,5.423,5.423v0.365a5.423,5.423,0,1,1-10.846,0V58.371A5.423,5.423,0,0,1,82.792,52.948Z"/>
+  <path id="Rectángulo_redondeado_4-20" data-name="Rectángulo redondeado 4" class="cls-2" d="M26.385,53.288a5.435,5.435,0,0,1,5.435,5.435v0.34a5.435,5.435,0,1,1-10.87,0v-0.34A5.435,5.435,0,0,1,26.385,53.288Z"/>
+  <path id="Rectángulo_redondeado_3" data-name="Rectángulo redondeado 3" class="cls-3" d="M38.995,11.242a2.626,2.626,0,0,1,2.626,2.626V27.535a2.626,2.626,0,1,1-5.253,0V13.868A2.626,2.626,0,0,1,38.995,11.242Z"/>
+  <circle id="Elipse_1" data-name="Elipse 1" cx="23.406" cy="28.25" r="4.563"/>
+  <path id="Rectángulo_redondeado_3-2" data-name="Rectángulo redondeado 3" class="cls-3" d="M23.236,11.242a2.626,2.626,0,0,1,2.626,2.626V27.535a2.626,2.626,0,0,1-5.253,0V13.868A2.626,2.626,0,0,1,23.236,11.242Z"/>
+  <circle id="Elipse_1-2" data-name="Elipse 1" cx="39.172" cy="28.25" r="4.547"/>
+  <path id="Rectángulo_redondeado_3-3" data-name="Rectángulo redondeado 3" class="cls-3" d="M54.048,10.9a2.626,2.626,0,0,1,2.626,2.626V27.195a2.626,2.626,0,1,1-5.253,0V13.528A2.626,2.626,0,0,1,54.048,10.9Z"/>
+  <circle id="Elipse_1-3" data-name="Elipse 1" cx="54.219" cy="27.891" r="4.563"/>
+  <path id="Rectángulo_redondeado_3-4" data-name="Rectángulo redondeado 3" class="cls-3" d="M69.83,10.9a2.626,2.626,0,0,1,2.626,2.626V27.195a2.626,2.626,0,0,1-5.253,0V13.528A2.626,2.626,0,0,1,69.83,10.9Z"/>
+  <circle id="Elipse_1-4" data-name="Elipse 1" cx="70" cy="27.891" r="4.563"/>
+  <path id="Rectángulo_redondeado_3-5" data-name="Rectángulo redondeado 3" class="cls-3" d="M85.941,10.9A2.639,2.639,0,0,1,88.58,13.54V27.182a2.639,2.639,0,1,1-5.277,0V13.54A2.639,2.639,0,0,1,85.941,10.9Z"/>
+  <circle id="Elipse_1-5" data-name="Elipse 1" cx="86.109" cy="27.891" r="4.547"/>
+</svg>

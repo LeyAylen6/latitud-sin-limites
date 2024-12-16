@@ -2,6 +2,10 @@
     --bs-primary: #23c29d;
 } */
 
+body {
+    min-width: 360px
+}
+
 /* ! Personalizacion botones */
 .btn-primary {
     background-color: #23c29d !important;
