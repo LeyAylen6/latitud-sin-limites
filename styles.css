@@ -226,6 +226,10 @@
     ul li {
         font-size: 16px !important;
     }
+
+    .carousel {
+        width: 95% !important;
+    }
 }
 
 @media (max-width: 769px) {
@@ -236,5 +240,29 @@
 
     .fs-4 {
         font-size: 20px !important;
+    }
+
+    .carousel {
+        width: 100% !important;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .fs-3 {
+        font-size: 25px !important;
+    }
+
+    a,
+    .fs-5 {
+        font-size: 14px !important;
+    }
+
+    .carousel {
+        width: 100% !important;
     }
 }
