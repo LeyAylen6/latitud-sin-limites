@@ -3,26 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latitud sin Límites</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/media/css/styles.css">
 </head>
-<body class="fs-5">
+<body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
-            <button class="navbar-toggler m-3 ms-4 bg-secondary" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-navbar">
+            <button class="navbar-toggler m-3 ms-4 bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse fs-3 ms-4" id="navbar">
                
                 <a class="navbar-brand col-2" href="index.html">
-                    <img src="/img/common/logo-agencia.png" alt="Latitud Sin Límites Logo" class="col-8">
-                    <h1 class="text-light d-none">Latitud Sin Límites</h1>
+                    <img src="/img/common/logo-row.png" alt="Latitud Sin Límites Logo" class="col-4 col-lg-8">
+                    <h1 class="text-light fs-4">Latitud Sin Límites</h1>
+                    <p class="text-light fs-6 ms-4" >AGENCIA DE VIAJES</p>
                 </a>
         
-                <ul class="navbar-nav d-flex justify-content-evenly col-10">
+                <ul class="navbar-nav d-flex justify-content-evenly col-10 font-aclonica">
                     <li class="nav-item active">
                         <a class="nav-link text-light mt-2" href="#flights">Vuelos</a>
                     </li>
@@ -52,27 +53,27 @@
         
     </header>
     <main>
-        <section id="home" class="background-image w-100 d-flex flex-column justify-content-end height-700">
-            <div class="overlay w-100 height-700 z-0"></div>
+        <section id="home" class="background-image w-100 d-flex flex-column justify-content-end custom-height">
+            <div class="overlay w-100 custom-height z-0"></div>
             
-            <div class="d-flex flex-column text-light text-end align-items-end p-5 z-1">
-                <h2 class="fs-1 fs-sm-4 fs-md-3 fs-lg-1">
+            <div class="d-flex w-100 flex-column text-light text-end align-items-end p-5 z-1">
+                <h2 class="fs-1 font-aclonica">
                     Tu viaje, tus reglas!
                 </h2>
-                <p class="fs-2">Personaliza tu itinerario con nuestras opciones de vuelos, hoteles y actividades.</p>
+                <p class="fs-2 ">Personaliza tu itinerario con nuestras opciones de vuelos, hoteles y actividades.</p>
         
-                <button type="submit" action="" class="btn btn-primary col-md-4 col-sm-3 col-2 fs-5">
+                <button class="btn btn-primary col-10 col-sm-8 col-md-5 col-lg-4 fs-5">
                     Arma tu viaje con nosotros
                 </button>
             </div>  
         
             <div class="col-12 d-flex justify-content-center z-1 position-relative text-light fs-5 top-50">
-                <form action="#" method="post" class="w-75 bg-primary d-flex flex-column flex-md-row justify-content-evenly align-items-center p-4 rounded-4">
+                <form action="#" method="post" class="w-75 bg-primary d-flex flex-column flex-md-row justify-content-evenly align-items-center pb-4 rounded-4">
                     <div class="col-10 col-xs-12 py-4">
                         <div class="d-flex flex-wrap justify-content-evenly">
                             <div class="form-check form-check-inline">
-                                <input id="flights" type="radio" name="serviceType" value="flights" class="form-check-input">
-                                <label for="flights">Vuelos</label>
+                                <input id="flights-radio" type="radio" name="serviceType" value="flights" class="form-check-input">
+                                <label for="flights-radio">Vuelos</label>
                             </div>
                             <div class="form-check form-check-inline">
                                 <input id="allInclusive" type="radio" name="serviceType" value="allInclusive" class="form-check-input">
@@ -107,7 +108,7 @@
                             </div>
                             <div class="form-group col-12 col-sm-3 col-md-3 col-lg-1">
                                 <label for="passengers">Pasajeros</label>
-                                <select class="form-select">
+                                <select id="passengers" class="form-select">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -127,26 +128,26 @@
 
         <section id="promotion" class="d-flex text-light bg-secondary my-5 shadow mt-100">
             <figure class="d-flex col-5 col-sm-5 col-md-7 flex-column flex-md-row mt-2"> 
-                <img src="/img/home/promotion/valija.png" class="col-9 col-md-7 col-lg-5"/>
+                <img src="/img/home/promotion/valija.png" class="col-9 col-md-7 col-lg-5">
                 <figcaption class="col-12 col-md-8 text-black ms-5 my-auto">
-                    <h2 class="fs-4 col-11 col-md-7"><strong>Paga menos comprando tu vuelo junto con un hotel</strong></h2>
+                    <h2 class="fs-4 col-11 col-md-7">
+                        <strong>Paga menos comprando tu vuelo junto con un hotel</strong>
+                    </h2>
                     <p class="col-10 col-md-6">Aprovecha la promoción y ahorrá hasta un 20% en tu viaje</p>
                 </figcaption>
             </figure>
             <aside class="col-7 col-sm-7 col-md-5 triangle bg-promotion d-flex justify-content-end align-items-center">
                 <p class="fs-5 text-center col-7 col-sm-5 col-md-5 col-lg-4 me-0 me-sm-5 me-md-5 me-lg-5">
-                    <strong class="fs-2 rounded-4 bg-opacity px-2 my-5">10% OFF</strong> 
-                    <strong class="fs-5 d-block">EXTRA</strong> 
+                    <strong class="fs-2 rounded-4 bg-opacity px-2 py-1 my-5 font-aclonica">10% OFF</strong> 
+                    <strong class="fs-5 d-block font-aclonica">EXTRA</strong> 
                     pagando con debito, dinero en cuenta o en 1 cuota.
                 </p>
             </aside>
         </section>
 
         <section id="promotion-flights" class="d-flex flex-column align-items-center">
-            <h2>
-                <span class="bg-primary px-2">
-                    Vuelos en Promoción
-                </span>
+            <h2 class="bg-h2 px-2 font-aclonica">
+                Vuelos en Promoción
             </h2>
 
             <div id="flights" class="carousel carousel-dark slide w-75 mt-4 overflow-hidden" data-bs-ride="carousel">
@@ -171,7 +172,7 @@
 
                             <article class="card w-100 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3" >
                                 <figure>
-                                    <img src="./img/home/flights/francia.jpg" class="d-block w-100 card-img-top" alt="...">
+                                    <img src="../img/home/flights/francia.jpg" class="d-block w-100 card-img-top" alt="...">
                                 </figure>
                                 <div class="card-body d-flex flex-column p-2">
                                     <h3 class="card-title fs-4">París</h3>
@@ -187,7 +188,7 @@
 
                             <article class="card w-100 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3">
                                 <figure>
-                                    <img src="./img/home/flights/islandia.jpg" class="d-block w-100 card-img-top" alt="Islandia">
+                                    <img src="../img/home/flights/islandia.jpg" class="d-block w-100 card-img-top" alt="Islandia">
                                 </figure>
                                 <div class="card-body d-flex flex-column p-2">
                                     <h3 class="card-title fs-4">Islandia</h3>
@@ -206,7 +207,7 @@
                         <div class="d-flex justify-content-center">
                             <article class="card w-100 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3">
                                 <figure>
-                                    <img src="./img/home/flights/new-york.jpeg" class="d-block w-100 card-img-top" alt="Nueva York">
+                                    <img src="../img/home/flights/new-york.jpeg" class="d-block w-100 card-img-top" alt="Nueva York">
                                 </figure>
                                 <div class="card-body d-flex flex-column p-2">
                                     <h3 class="card-title fs-4">Nueva York</h3>
@@ -222,7 +223,7 @@
 
                             <article class="card w-100 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3" >
                                 <figure>
-                                    <img src="./img/home/flights/brasil.jpg" class="d-block w-100 card-img-top" alt="Brasil">
+                                    <img src="../img/home/flights/brasil.jpg" class="d-block w-100 card-img-top" alt="Vista aérea de Brasil con oferta All Inclusive">
                                 </figure>
                                 <div class="card-body d-flex flex-column p-2">
                                     <h3 class="card-title fs-4">Brasil</h3>
@@ -238,7 +239,7 @@
 
                             <article class="card w-100 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3">
                                 <figure>
-                                    <img src="./img/home/flights/maldivas.jpg" class="d-block w-100 card-img-top" alt="Maldivas">
+                                    <img src="../img/home/flights/maldivas.jpg" class="d-block w-100 card-img-top" alt="Maldivas">
                                 </figure>
                                 <div class="card-body d-flex flex-column p-2">
                                     <h3 class="card-title fs-4">Maldivas</h3>
@@ -267,10 +268,8 @@
         </section>
 
         <section id="promotion-all-inclusive" class="d-flex flex-column align-items-center mt-5 overflow-hidden">
-            <h2>
-                <span class="bg-primary px-2"> 
-                    All Inclusive en Promoción
-                </span>
+            <h2 class="bg-h2 px-2 font-aclonica"> 
+                All Inclusive en Promoción
             </h2>
 
             <div id="all-inclusive" class="carousel carousel-dark slide w-75 mt-4" data-bs-ride="carousel">
@@ -279,7 +278,7 @@
                         <div class="d-flex justify-content-center">
                             <article class="card w-100 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3">
                                 <figure>
-                                    <img src="/img/home/allInclusives/brasil.jpg" class="d-block w-100 card-img-top" alt="All inclusive brasil">
+                                    <img src="../img/home/allInclusives/brasil.jpg" class="d-block w-100 card-img-top" alt="All inclusive brasil">
                                 </figure>
                                 <div class="card-body d-flex flex-column p-2">
                                     <h3 class="card-title fs-4">All Inclusive Brasil</h3>
@@ -295,13 +294,14 @@
 
                             <article class="card w-100 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3" >
                                 <figure>
-                                    <img src="./img/home/allInclusives/punta-cana.jpg" class="d-block w-100 card-img-top" alt="Punta Cana">
+                                    <img src="../img/home/allInclusives/punta-cana.jpg" class="d-block w-100 card-img-top" alt="Punta Cana">
                                 </figure>
                                 <div class="card-body d-flex flex-column p-2">
                                     <h3 class="card-title fs-4">All inclusive Punta Cana</h3>
                                     <p class="card-text w-100 w-lg-75">
                                         Precio por persona desde <s class="text-success">USD$ 2.500</s>
                                     </p>
+                                    <p>
                                         <strong class="text-success fs-5">USD$ 2.000</strong>
                                     </p>
                                     <a href="all-inclusive-detail.html" class="btn btn-primary w-100 w-lg-75 mx-auto">Quiero saber más!</a>
@@ -310,7 +310,7 @@
 
                             <article class="card w-100 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3">
                                 <figure>
-                                    <img src="./img/home/allInclusives/miami.jpg" class="d-block w-100 card-img-top" alt="All inclusive Miami">
+                                    <img src="../img/home/allInclusives/miami.jpg" class="d-block w-100 card-img-top" alt="All inclusive Miami">
                                 </figure>
                                 <div class="card-body d-flex flex-column p-2">
                                     <h3 class="card-title fs-4">All inclusive Miami</h3>
@@ -329,7 +329,7 @@
                         <div class="d-flex justify-content-center">
                             <article class="card w-100 w-lg-25 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3">
                                 <figure>
-                                    <img src="./img/home/allInclusives/las-vegas.jpg" class="d-block w-100 card-img-top" alt="All inclusive Las Vegas">
+                                    <img src="../img/home/allInclusives/las-vegas.jpg" class="d-block w-100 card-img-top" alt="All inclusive Las Vegas">
                                 </figure>
                                 <div class="card-body d-flex flex-column col-12 p-2">
                                     <h3 class="card-title fs-4">All inclusive Las Vegas</h3>
@@ -345,7 +345,7 @@
 
                             <article class="card w-100 w-lg-25 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3" >
                                 <figure>
-                                    <img src="./img/home/allInclusives/londres.jpg" class="d-block w-100 card-img-top" alt="All inclusive Londres">
+                                    <img src="../img/home/allInclusives/londres.jpg" class="d-block w-100 card-img-top" alt="All inclusive Londres">
                                 </figure>
                                 <div class="card-body d-flex flex-column p-2">
                                     <h3 class="card-title fs-4">All inclusive Londres</h3>
@@ -361,7 +361,7 @@
 
                             <article class="card w-100 w-lg-25 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3">
                                 <figure>
-                                    <img src="./img/home/allInclusives/japon.jpg" class="d-block w-100 card-img-top" alt="All inclusive Japón">
+                                    <img src="../img/home/allInclusives/japon.jpg" class="d-block w-100 card-img-top" alt="All inclusive Japón">
                                 </figure>
                                 <div class="card-body d-flex flex-column p-2">
                                     <h3 class="card-title fs-4">All inclusive Japón</h3>
@@ -390,10 +390,8 @@
         </section>
 
         <section id="promotion-hotels" class="d-flex flex-column align-items-center mt-5 overflow-hidden">
-            <h2>
-                <span class="bg-primary px-2">
-                    Hoteles en promoción
-                </span>
+            <h2 class="bg-h2 px-2 font-aclonica">
+                Hoteles en promoción
             </h2>
 
             <div id="hotels" class="carousel carousel-dark slide w-75 mt-4" data-bs-ride="carousel">
@@ -402,7 +400,7 @@
                         <div class="d-flex justify-content-center">
                             <article class="card w-100 w-lg-25 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3">
                                 <figure>
-                                    <img src="/img/home/hotels/merana-relaxation-aerial.jpg" class="d-block w-100 card-img-top" alt="Italia">
+                                    <img src="../img/home/hotels/merana-relaxation-aerial.jpg" class="d-block w-100 card-img-top" alt="Italia">
                                 </figure>
                                 <div class="card-body d-flex flex-column p-2">
                                     <h3 class="card-title fs-4">Relaxation, Maldivas</h3>
@@ -418,7 +416,7 @@
 
                             <article class="card w-100 w-lg-25 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3" >
                                 <figure>
-                                    <img src="./img/home/hotels/designe-suites.jpg" class="d-block w-100 card-img-top" alt="Designe Suites Bariloche">
+                                    <img src="../img/home/hotels/designe-suites.jpg" class="d-block w-100 card-img-top" alt="Designe Suites Bariloche">
                                 </figure>
                                 <div class="card-body d-flex flex-column p-2">
                                     <h3 class="card-title fs-4">Designe Suites, Bariloche</h3>
@@ -434,7 +432,7 @@
 
                             <article class="card w-100 w-lg-25 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3">
                                 <figure>
-                                    <img src="./img/home/hotels/brisa.jpg" class="d-block w-100 card-img-top" alt="Brisa Hotel Punta Cana">
+                                    <img src="../img/home/hotels/brisa.jpg" class="d-block w-100 card-img-top" alt="Brisa Hotel Punta Cana">
                                 </figure>
                                 <div class="card-body d-flex flex-column p-2">
                                     <h3 class="card-title fs-4">Brisa Hotel, Punta Cana</h3>
@@ -453,7 +451,7 @@
                         <div class="d-flex justify-content-center">
                             <article class="card w-100 w-lg-25 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3">
                                 <figure>
-                                    <img src="./img/home/hotels/warwick-new-york.jpg" class="d-block w-100 card-img-top" alt="Warwick Hotel New York">
+                                    <img src="../img/home/hotels/warwick-new-york.jpg" class="d-block w-100 card-img-top" alt="Warwick Hotel New York">
                                 </figure>
                                 <div class="card-body d-flex flex-column p-2">
                                     <h3 class="card-title fs-4">Warwick Hotel - New York</h3>
@@ -469,7 +467,7 @@
 
                             <article class="card w-100 w-lg-25 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3" >
                                 <figure>
-                                    <img src="./img/home/hotels/golden-hotel.jpeg" class="d-block w-100 card-img-top" alt="Golden Hotel">
+                                    <img src="../img/home/hotels/golden-hotel.jpeg" class="d-block w-100 card-img-top" alt="Golden Hotel">
                                 </figure>
                                 <div class="card-body d-flex flex-column p-2">
                                     <h3 class="card-title fs-4">Golden Suites - Florida</h3>
@@ -485,7 +483,7 @@
 
                             <article class="card w-100 w-lg-25 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3">
                                 <figure>
-                                    <img src="./img/home/hotels/Hornel Hotel.jpg" class="d-block w-100 card-img-top" alt="Hornel Hotel">
+                                    <img src="../img/home/hotels/hornel-hotel.jpg" class="d-block w-100 card-img-top" alt="Hornel Hotel">
                                 </figure>
                                 <div class="card-body d-flex flex-column p-2">
                                     <h3 class="card-title fs-4">Hornel Hotel - Valencia</h3>
@@ -513,8 +511,10 @@
             </div>
         </section>
 
-        <section id="popular-excusions" class="d-flex flex-column align-items-center mt-5 overflow-hidden">
-            <h2 class="bg-primary">Excursiones populares alrededor del mundo</h2>
+        <section id="popular-excursions" class="d-flex flex-column align-items-center mt-5 overflow-hidden">
+            <h2 class="bg-h2 font-aclonica">
+                Excursiones populares alrededor del mundo
+            </h2>
 
             <div id="excursions" class="carousel carousel-dark slide w-75 mt-4" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -522,12 +522,12 @@
                         <div class="d-flex justify-content-center">
                             <article class="card w-100 w-lg-25 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3">
                                 <figure>
-                                    <img src="./img/home/excursions/buggie.jpg" class="card-img-top" alt="Buggie en Punta Cana">
+                                    <img src="../img/home/excursions/buggie.jpg" class="card-img-top" alt="Buggie en Punta Cana">
                                 </figure>
                                 <div class="card-body d-flex flex-column p-2">
                                     <h3 class="card-title fs-4">Buggie a la playa de Macao</h3>
                                     <figure class="d-flex">
-                                        <img src="/img/common/location-black.svg">
+                                        <img src="/img/common/location-black.svg" alt="location icon">
                                         <p class="mt-3 ms-1">Punta Cana.</p>
                                     </figure>
                                     <p class="card-text w-100 w-lg-75">
@@ -540,12 +540,12 @@
 
                             <article class="card w-100 w-lg-25 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3">
                                 <figure>
-                                    <img src="/img/home/excursions/magic-kingdom.jpg" class="card-img-top" alt="Magic Kindom, Orlando">
+                                    <img src="../img/home/excursions/magic-kingdom.jpg" class="card-img-top" alt="Magic Kindom, Orlando">
                                 </figure>
                                 <div class="card-body d-flex flex-column p-2">
                                     <h3 class="card-title fs-4">Día en Magic Kingdom</h3>
                                     <figure class="d-flex">
-                                        <img src="/img/common/location-black.svg">
+                                        <img src="/img/common/location-black.svg" alt="location icon">
                                         <p class="mt-3 ms-1">Orlando, Florida.</p>
                                     </figure>
                                     <p class="card-text w-100 w-lg-75">
@@ -558,12 +558,12 @@
 
                             <article class="card w-100 w-lg-25 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3">
                                 <figure>
-                                    <img src="/img/home/excursions/glaciar.jpg" class="card-img-top" alt="Glaciar Perito Moreno">
+                                    <img src="../img/home/excursions/glaciar.jpg" class="card-img-top" alt="Glaciar Perito Moreno">
                                 </figure>
                                 <div class="card-body d-flex flex-column p-2">
                                     <h3 class="card-title fs-4">Tour Glaciar Perito Moreno</h3>
                                     <figure class="d-flex">
-                                        <img src="/img/common/location-black.svg">
+                                        <img src="/img/common/location-black.svg" alt="location icon">
                                         <p class="mt-3 ms-1">Calafate, Argentina</p>
                                     </figure>
                                     <p class="card-text w-100 w-lg-75">
@@ -579,12 +579,12 @@
                         <div class="d-flex justify-content-center">
                             <article class="card w-100 w-lg-25 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3">
                                 <figure>
-                                    <img src="/img/home/excursions/venecia.jpg" class="card-img-top" alt="Gran Canal de Venecia">
+                                    <img src="../img/home/excursions/venecia.jpg" class="card-img-top" alt="Gran Canal de Venecia">
                                 </figure>
                                 <div class="card-body d-flex flex-column p-2">
                                     <h3 class="card-title fs-4">Paseo por el Gran Canal</h3>
                                     <figure class="d-flex">
-                                        <img src="/img/common/location-black.svg">
+                                        <img src="/img/common/location-black.svg" alt="location icon">
                                         <p class="mt-3 ms-1">Venecia, Italia.</p>
                                     </figure>
                                     <p class="card-text w-100 w-lg-75">
@@ -597,12 +597,12 @@
 
                             <article class="card w-100 w-lg-25 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3">
                                 <figure>
-                                    <img src="./img/home/excursions/bodegas.jpg" class="card-img-top" alt="Bodegas en Mendoza">
+                                    <img src="../img/home/excursions/bodegas.jpg" class="card-img-top" alt="Bodegas en Mendoza">
                                 </figure>
                                 <div class="card-body d-flex flex-column p-2">
                                     <h3 class="card-title fs-4">Tour de Bodegas</h3>
                                     <figure class="d-flex">
-                                        <img src="/img/common/location-black.svg">
+                                        <img src="/img/common/location-black.svg" alt="location icon">
                                         <p class="mt-3 ms-1">Mendoza, Argentina.</p>
                                     </figure>
                                     <p class="card-text w-100 w-lg-75">
@@ -615,12 +615,12 @@
 
                             <article class="card w-100 w-lg-25 mx-1 mx-sm-1 mx-md-1 mx-lg-3 mb-3">
                                 <figure>
-                                    <img src="./img//home/excursions/tigre.jpg" class="card-img-top" alt="Paseo en el Delta">
+                                    <img src="../img//home/excursions/tigre.jpg" class="card-img-top" alt="Paseo en el Delta">
                                 </figure>
                                 <div class="card-body d-flex flex-column p-2">
                                     <h3 class="card-title fs-4">Paseo en el Delta</h3>
                                     <figure class="d-flex">
-                                        <img src="/img/common/location-black.svg">
+                                        <img src="/img/common/location-black.svg" alt="location icon">
                                         <p class="mt-3 ms-1">Tigre, Argentina.</p>
                                     </figure>
                                     <p class="card-text w-100 w-lg-75">
@@ -634,11 +634,11 @@
                     </div>
                 </div>
               
-                <button class="carousel-control-prev" type="button" data-bs-target="#excusions" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#excursions" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#excusions" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#excursions" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
@@ -647,25 +647,22 @@
 
         <section id="about-us" class="d-flex justify-content-center mt-5">
             <div class="col-11 col-lg-9 bg-secondary card">
-                <h2 class="text-center mt-4">
-                    <span class="bg-primary px-2">
+                <h2 class="text-center mt-4 font-aclonica">
+                    <span class="bg-h2 px-2">
                         Nosotros
                     </span>
                 </h2>
-                <div class="mx-3 mx-lg-5">
+                
+                <div class="mx-3 mx-lg-5 fs-5">
                     <p>
                         En <strong>Latitud sin límites</strong> convertimos tus sueños de viaje en realidad.
                         Con años de experiencia, miles de viajeron satisfechos y una pasion por explorar, hacemos que cada aventura sea única e inolvidable.
                     </p>
-                    <p>
-                        <span class="bg-primary px-2">
-                            ¡Ahora puedes crear tu propio paquete de viaje!
-                        </span>
+                    <p class="font-aclonica">
+                        ¡Ahora puedes crear tu propio paquete de viaje!
                     </p>
-                    <p>
-                        <span class="bg-primary px-2">
-                            Elige vuelos, hoteles y actividades y agregalo todo a tu paquete en línea para diseñar el viaje perfecto para tí.
-                        </span>
+                    <p class="font-aclonica">
+                        Elige vuelos, hoteles y actividades y agregalo todo a tu paquete en línea para diseñar el viaje perfecto para tí.
                     </p>
                     <p>
                         La aventura comienza con solo unos clicks!
@@ -674,19 +671,19 @@
                     <ul class="list-inline d-flex flex-column flex-sm-row flex-md-row flex-lg-row justify-content-evenly align-items-center">
                         <li class="col-7 col-sm-3 col-lg-2 list-inline-item">
                             <figure>
-                                <img src="img/home/about-us/statistic.svg" alt="imagen de estadistica" class="w-100">
+                                <img src="../img/home/about-us/statistic.svg" alt="imagen de estadistica" class="w-100">
                                 <figcaption>98% de satisfacción en encuestas</figcaption>
                             </figure>
                         </li>
                         <li class="col-7 col-sm-3 col-lg-2 list-inline-item">
                             <figure>
-                                <img src="img/home/about-us/check.svg" alt="imagen de tilde" class="w-100">
-                                <figcaption>1.200 reservas al año gestionadas con éxito<figcaption>
+                                <img src="../img/home/about-us/check.svg" alt="imagen de tilde" class="w-100">
+                                <figcaption>1.200 reservas al año gestionadas con éxito</figcaption>
                             </figure>
                         </li>
                         <li class="col-7 col-sm-3 col-lg-2 list-inline-item">
                             <figure>
-                                <img src="img/home/about-us/calendar.svg" alt="imagen de calendario" class="w-100">
+                                <img src="../img/home/about-us/calendar.svg" alt="imagen de calendario" class="w-100">
                                 <figcaption>10 años de experiencia en el sector turístico</figcaption>
                             </figure>
                         </li>
@@ -705,30 +702,30 @@
             </ul>
 
             <figure class="col-4 col-sm-3 col-lg-3 d-flex justify-content-center align-items-center">
-                <img src="/img/common/logo-agencia.png" class="col-12"/>
+                <img src="../img/common/logo-agencia.png" class="col-12" alt="Latitud sin Límites logo">
             </figure>
         </div>
 
         <div class="d-flex flex-column align-items-end col-7 col-sm-3 col-lg-3 mt-3">
             <ul class="list-inline pr-0 d-flex justify-content-between mb-3">
                 <li class="list-inline-item">
-                    <a href="">
-                        <img src="img/footer/facebook-logo.svg" alt="Facebook" class="col-6">
+                    <a href="#">
+                        <img src="../img/footer/facebook-logo.svg" alt="Facebook" class="col-6">
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="">
-                        <img src="img/footer/tiktok-logo.svg" alt="Tik Tok" class="col-6">
+                    <a href="#">
+                        <img src="../img/footer/tiktok-logo.svg" alt="Tik Tok" class="col-6">
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="">
-                        <img src="img/footer/twitter-logo.svg" alt="Twitter" class="col-6">
+                    <a href="#">
+                        <img src="../img/footer/twitter-logo.svg" alt="Twitter" class="col-6">
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="">
-                        <img src="img/footer/instagram-logo.svg" alt="Instagram" class="col-6">
+                    <a href="#">
+                        <img src="../img/footer/instagram-logo.svg" alt="Instagram" class="col-6">
                     </a>
                 </li>
             </ul>
