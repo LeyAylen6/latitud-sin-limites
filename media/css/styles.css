@@ -7,15 +7,23 @@ body {
     min-width: 360px
 }
 
+nav {
+    animation: descendToBottom 4s forwards;
+}
+
+form {
+    animation: show 4s forwards;
+}
+
+.font-aclonica {
+    font-family: "Aclonica";
+}
+
 /* ! Personalizacion botones */
 .btn-primary {
     background-color: #23c29d !important;
     border-color: #34c2a2 !important;
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-}
-
-.font-aclonica {
-    font-family: "Aclonica";
 }
 
 .btn-primary:hover {
@@ -58,11 +66,44 @@ body {
     background-color: rgb(35, 194, 157, .4) !important;
 }
 
-/* .bg-p {
-    background-color: rgb(35, 194, 157, .7) !important;
-} */
+/* ! Iconos de listas personalizados */
+/* contacto - footer */
+.contact li:nth-child(1) {
+    list-style-image: url("/img/footer/mail.svg");
+}
 
-/* ! CSS extra */
+.contact li:nth-child(2) {
+    list-style-image: url("/img/footer/call.svg");
+}
+
+.contact li:nth-child(3) {
+    list-style-image: url("/img/footer/location.svg");
+}
+
+/* Detail - Flight */
+.flight-detail li:nth-child(1) {
+    list-style-image: url("/img/detail/flight/check.svg");
+}
+
+.flight-detail li:nth-child(2) {
+    list-style-image: url("/img/common/clock.svg");
+}
+
+/* Detail - Excursion */
+.excursion-detail li:nth-child(1) {
+    list-style-image: url("/img/common/clock.svg");
+}
+
+.excursion-detail li:nth-child(2) {
+    list-style-image: url("/img/detail/excursions/person.svg");
+}
+
+/* My Trip - Flight*/
+.schedule-list li {
+    list-style-image: url("/img/my-trip/calendar.svg");
+}
+
+/* ! Clases personalizadas */
 .card {
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
     border: none;
@@ -76,22 +117,6 @@ body {
     transform: translateX(30%);
 }
 
-.max-content {
-    width: auto;
-}
-
-.contact li:nth-child(1) {
-    list-style-image: url("img/footer/mail.svg");
-}
-
-.contact li:nth-child(2) {
-    list-style-image: url("img/footer/call.svg");
-}
-
-.contact li:nth-child(3) {
-    list-style-image: url("img/footer/location.svg");
-}
-
 .triangle {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 37% 50%);
 }
@@ -100,7 +125,8 @@ body {
     background-image: url("/img/common/fondo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative
+    position: relative;
+    background-position-y: -150px;
 }
 
 .overlay {
@@ -123,6 +149,10 @@ body {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+.bg-navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .top-50 {
     top: 50px !important;
 }
@@ -133,29 +163,6 @@ body {
 
 .width-75 {
     width: 75px !important;
-}
-
-/* ! Detail - Flight */
-.flight-detail li:nth-child(1) {
-    list-style-image: url("img/detail/flight/check.svg");
-}
-
-.flight-detail li:nth-child(2) {
-    list-style-image: url("img/common/clock.svg");
-}
-
-/* ! Detail - Excursion */
-.excursion-detail li:nth-child(1) {
-    list-style-image: url("img/common/clock.svg");
-}
-
-.excursion-detail li:nth-child(2) {
-    list-style-image: url("img/detail/excursions/person.svg");
-}
-
-/* ! My Trip - Flight*/
-.schedule-list li {
-    list-style-image: url("img/my-trip/calendar.svg");
 }
 
 /* ! Media Queries */
@@ -237,6 +244,23 @@ body {
     }
 }
 
-.bg-navbar {
-    background-color: rgba(0, 0, 0, 0.5);
+/* !Animaciones */
+@keyframes descendToBottom {
+    from {
+        transform: translateY(-200px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
